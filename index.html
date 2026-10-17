@@ -118,6 +118,36 @@
             outline: 2px solid #c4b5fd;
             outline-offset: 4px;
         }
+        
+.video-demo {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 12px;
+    border: 1px solid #475569;
+    background: #020617;
+}
+
+.boton-secundario {
+    display: inline-block;
+    color: #ddd6fe;
+    border: 1px solid #8b5cf6;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    margin: 15px 8px 0 0;
+}
+
+.boton:hover,
+.boton-secundario:hover {
+    opacity: 0.85;
+}
+
+.tarjeta p {
+    color: #cbd5e1;
+}
+
     </style>
 </head>
 
@@ -125,12 +155,15 @@
 
     <header>
         <h2>Portfolio Ana Rivera</h2>
-
+       
         <nav>
             <a href="#sobre-mi">Sobre mí</a>
             <a href="#proyectos">Proyectos</a>
+            <a href="#demo">Demo</a>
+            <a href="#curriculum">Mi CV</a>
             <a href="#contacto">Contacto</a>
         </nav>
+
     </header>
 
     <main>
@@ -200,8 +233,49 @@
                         Power BI, Excel, SQL, Python.
                     </p>
                 </article>
-            </div>
+            </div>            
         </section>
+        
+<section id="demo">
+    <h2>Proyecto destacado: Sistema de ventas e inventario</h2>
+
+    <p>
+        Desarrollé un sistema para registrar ventas,
+        consultar productos y controlar existencias.
+        Esta demostración muestra parte de su funcionamiento.
+    </p>
+
+    <div class="tarjeta">
+        <p><strong>Funcionalidades:</strong></p>
+        <ul>
+            <li>Registro de ventas.</li>
+            <li>Consulta y control de productos.</li>
+            <li>Visualización de existencias y alertas de stock bajo.</li>
+        </ul>
+
+        <p><strong>Tecnologías:</strong> Laravel, PHP, MySQL y Bootstrap.</p>
+    </div>
+
+    <video class="video-demo" controls preload="metadata">
+        <source src="demo-sistema-ventas.mp4" type="video/mp4">
+        Tu navegador no puede reproducir este video.
+    </video>
+
+   
+<div class="video-contenedor">
+    <iframe
+        src="https://youtu.be/dZrxzCL6lrA"
+        title="Demostración del sistema de ventas e inventario"
+        allow="accelerometer; autoplay; clipboard-write;
+               encrypted-media; gyroscope; picture-in-picture;
+               web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+</div>
+
+</section>
+
 
         <section id="tecnologias">
             <h2>Tecnologías</h2>
@@ -218,6 +292,31 @@
             </div>
         </section>
 
+
+<section id="curriculum">
+    <h2>Mi currículum profesional</h2>
+
+    <p>
+        Conoce mi experiencia en desarrollo backend,
+        análisis de datos, bases de datos y optimización
+        de procesos empresariales.
+    </p>
+
+    <a class="boton"
+       href="CV-Ana-Rivera.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+        Consultar mi CV
+    </a>
+
+    <a class="boton-secundario"
+       href="CV_AnaGloria2026.pdf"
+       download>
+        Descargar CV en PDF
+    </a>
+</section>
+
+        
         <section id="contacto">
             <h2>Contacto</h2>
 
